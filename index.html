@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--! Link Stylesheets -->
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/normalize.css">
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/daymode.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
+        <link rel="icon" type="image/png" href="image/logo.png">
+        <!--! Link Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>CodeCraft Agency | project'6'</title>
+    </head>
+    <body>
+        <!-- * Header * -->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="image/logo.png" alt="logo">
+                    <div class="text">
+                        <h2>CodeCraft</h2>
+                        <p>
+                            <span>A</span>
+                            <span>G</span>
+                            <span>E</span>
+                            <span>N</span>
+                            <span>C</span>
+                            <span>Y</span>
+                        </p>
+                    </div>
+                </div>
+                <nav class="navBar">
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#about"><i class="fas fa-info-circle"></i>About</a></li>
+                        <li><a href="#services"><i class="fas fa-cogs"></i>Services</a></li>
+                        <li><a href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-quote-left"></i>Testimonials</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-nav-icons" aria-label="Quick navigation">
+                    <a href="#home" class="mobile-nav-icon active" aria-label="Home"><i class="fas fa-home"></i></a>
+                    <a href="#about" class="mobile-nav-icon" aria-label="About"><i class="fas fa-info-circle"></i></a>
+                    <a href="#services" class="mobile-nav-icon" aria-label="Services"><i class="fas fa-cogs"></i></a>
+                    <a href="#portfolio" class="mobile-nav-icon" aria-label="Portfolio"><i class="fas fa-briefcase"></i></a>
+                    <a href="#testimonials" class="mobile-nav-icon" aria-label="Testimonials"><i class="fas fa-quote-left"></i></a>
+                    <a href="#contact" class="mobile-nav-icon" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+                    <a href="#contact" class="mobile-nav-icon project-icon" aria-label="Start a Project"><i class="fas fa-paper-plane"></i></a>
+                </div>
+                <button class="mobile-nav-toggle" aria-label="Open navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="mobile-nav-panel" id="mobileNavPanel">
+                    <div class="mobile-nav-panel-head">Sections</div>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-home"></i><span>Home</span></a></li>
+                        <li><a href="#about"><i class="fas fa-info-circle"></i><span>About</span></a></li>
+                        <li><a href="#services"><i class="fas fa-cogs"></i><span>Services</span></a></li>
+                        <li><a href="#portfolio"><i class="fas fa-briefcase"></i><span>Portfolio</span></a></li>
+                        <li><a href="#testimonials"><i class="fas fa-quote-left"></i><span>Testimonials</span></a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+                    </ul>
+                    <div class="mobile-theme-switch">
+                        <button class="theme-btn moon-btn" data-theme="night" aria-label="Switch to dark mode"><i class="fas fa-moon"></i><span>Night</span></button>
+                        <button class="theme-btn sun-btn" data-theme="day" aria-label="Switch to light mode"><i class="fas fa-sun"></i><span>Day</span></button>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="Start your project/index.html" target="_blank"><button><i class="fas fa-paper-plane"></i> Start a Project</button></a>
+                </div>
+                <div class="nightandday">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </div>
+            </div>
+        </header>
+        <!-- *Home Section* -->
+        <div class="home" id="home">
+            <div class="landing"></div>
+            <div class="container">
+                <div class="text">
+                    <h2>We Build Digital</h2>
+                    <h3>Products That 
+                        <span style="--i:4;" data-text="Front-End Developer">Front-End Developer</span>
+                        <span style="--i:3;" data-text="INSPIRE">INSPIRE</span>
+                        <span style="--i:2;" data-text="Back-End Developer">Back-End Developer</span>
+                        <span style="--i:1;" data-text="Web Experiences">Web Experiences</span>
+                    </h3>
+                    <p>
+                        We are a digital agency that specializes in creating stunning websites 
+                        and applications. Our team of 
+                        experts is dedicated to delivering high-quality work that exceeds our clients' 
+                        expectations.
+                    </p>
+                    <div class="buttons">
+                        <a href="Start your project/index.html" target="_blank"><button><i class="fas fa-paper-plane"></i> Start a Project</button></a>
+                        <a href="#portfolio"><button>View Our Work <i class="fas fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="avaters">
+                <div class="img-container">
+                    <div class="imgs">
+                        <img src="image/avatar1.png" alt="avatar1" class="avatar1">
+                        <img src="image/avatar2.png" alt="avatar2" class="avatar2">
+                        <img src="image/avatar3.png" alt="avatar3" class="avatar3">
+                        <img src="image/avatar4.png" alt="avatar4" class="avatar4">
+                        <div class="numper">120+</div>
+                    </div>
+                    <p>
+                        More than 120+ companies
+                        trusted Us to Build Their Digital Products.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- * Stats Section -->
+        <section class="stats-section" id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-target="120">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-number" data-target="300">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label"> Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *About Section* -->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2><i class="fas fa-lightbulb"></i> About Us</h2>
+                        <p class="about-lead">Turning Ideas into Creative Digital Reality.</p>
+                        <div class="about-features">
+                            <div class="feature-box">
+                                <i class="fas fa-code"></i>
+                                <span>Clean Code</span>
+                            </div>
+                            <div class="feature-box">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Stunning Design</span>
+                            </div>
+                            <div class="feature-box">
+                                <i class="fas fa-rocket"></i>
+                                <span>Innovation</span>
+                            </div>
+                        </div>
+                        <div class="about-desc">
+                            <p>At CodeCraft, we combine clean code, stunning design, and innovation to help brands grow online.</p>
+                            <p>We create websites and experiences that are fast, responsive, modern, and built for success.</p>
+                        </div>
+                    </div>
+                    <div class="about-img">
+                        <img src="image/about.png" alt="about">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Services Section -->
+        <div class="services" id="services">
+            <div class="container">
+                <div class="right-serv">
+                    <div class="main-heading">
+                        <h2><i class="fas fa-cogs"></i> Our Services</h2>
+                        <p>What We Do Best?!</p>
+                    </div>
+                    <p class="services-lead">
+                        We offer a wide range of services to help businesses succeed online. 
+                        From web design and development to digital marketing and SEO, we have the expertise to deliver results.
+                    </p>
+                    <button>Explore All Services <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="left-serv">
+                    <div class="service-box">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Web Development</h3>
+                        <p>We build responsive and high-performance websites that are tailored to your business needs.</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-palette"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Our design team creates visually stunning and user-friendly interfaces that enhance user experience.</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Digital Marketing</h3>
+                        <p>We develop effective digital marketing strategies to help you reach your target audience and grow your business.</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>App Development</h3>
+                        <p>We create powerful and engaging mobile applications that provide an excellent user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Portfolio Section -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="right-prof">
+                    <div class="main-heading">
+                        <h2><i class="fas fa-briefcase"></i> Our Portfolio</h2>
+                        <p>Our Recent Projects</p>
+                    </div>
+                    <p class="portfolio-lead" style="margin-bottom: 15px;">
+                        Some Of Our Recent Work :
+                    </p>
+                    <button>View All Projects <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="left-prof">
+                    <div class="project-box">
+                        <img src="image/kasper.png" alt="project1">
+                        <div class="tex">
+                            <h3>Kasper Website</h3>
+                            <p>WEB DEVELOPMENT</p>                            
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="image/ui & ux.png" alt="project2">
+                        <div class="tex">
+                            <h3>UI/UX Design</h3>
+                            <p>UI/UX DESIGN</p>                            
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="image/mobile app .png" alt="project3">
+                        <div class="tex">
+                            <h3>Mobile App</h3>
+                            <p>APP DEVELOPMENT</p>                            
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="image/Urpin vib.png" alt="project4">
+                        <div class="tex">
+                            <h3>Urpan Vibe</h3>
+                            <p>WEB DEVELOPMENT</p>                            
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="image/clario web side.png" alt="project5">
+                        <div class="tex">
+                            <h3>Clario Web Side</h3>
+                            <p>WEB DEVELOPMENT</p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--* Testimonials Section -->
+        <div class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="testimonials-heading">
+                    <h2><i class="fas fa-quote-left"></i> Testimonials</h2>
+                    <p>What Our Clients Say</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"CodeCraft Agency exceeded our expectations. Their team was professional, responsive, and delivered a high-quality website that perfectly represents our brand."</p>
+                        <div class="client-info">
+                            <div class="avatar">JD</div>
+                            <div>
+                                <h3>John Doe</h3>
+                                <span>CEO of Example Company</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Working with CodeCraft was a fantastic experience. They understood our vision and brought it to life with their creative design and development skills."</p>
+                        <div class="client-info">
+                            <div class="avatar">JS</div>
+                            <div>
+                                <h3>Jane Smith</h3>
+                                <span>Marketing Director at Sample Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The team at CodeCraft is amazing! They provided excellent support throughout the project and delivered a product that exceeded our expectations."</p>
+                        <div class="client-info">
+                            <div class="avatar">MJ</div>
+                            <div>
+                                <h3>Mike Johnson</h3>
+                                <span>Founder of Startup XYZ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Contact Section * -->
+        <section class="contact" id="contact">
+            <div class="container contact-wrapper">
+                <div class="contact-info">
+                    <div class="main-heading">
+                        <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                        <p>Let's build something amazing together.</p>
+                    </div>
+                    <p class="contact-lead">
+                        Have a project in mind? Share your idea with us and we’ll turn it into a polished digital experience that stands out.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Visit Us</h3>
+                                <span>Alexandria, Egypt</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <span>+20 155 554 0957</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-paper-plane"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <span>adelnabel919@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="input-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Tell us about your project" rows="6" required></textarea>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </section>
+        <!-- * Footer Section * -->
+        <footer class="footer">
+            <div class="container footer-wrapper">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="image/logo.png" alt="CodeCraft logo">
+                        <div class="footer-logo-text">
+                            <h3>CodeCraft</h3>
+                            <p>
+                                <span>A</span>
+                                <span>G</span>
+                                <span>E</span>
+                                <span>N</span>
+                                <span>C</span>
+                                <span>Y</span>
+                            </p>
+                        </div>
+                    </div>
+                    <p>We build modern digital experiences that help brands grow and stand out online.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 CodeCraft Agency. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- *JavaScript* -->
+        <script src="Js/nightday.js"></script>
+    </body>
+</html>

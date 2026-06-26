@@ -1,0 +1,72 @@
+/* * Day Mode * */
+body.day-mode {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f4f8 100%);
+    color: #0f172a;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+/* Premium light glow */
+body.day-mode::before {
+    content: '';
+    position: fixed;
+    top: -100px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
+    filter: blur(100px);
+    z-index: -1;
+    pointer-events: none;
+    animation: floatBg 8s ease-in-out infinite, glowPulse 4s ease-in-out infinite;
+}
+body.day-mode::after {
+    content: '';
+    position: fixed;
+    bottom: -120px;
+    left: -80px;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+    filter: blur(100px);
+    z-index: -1;
+    pointer-events: none;
+    animation: floatBg 10s ease-in-out infinite alternate, glowPulse 6s ease-in-out infinite reverse;
+}
+@keyframes floatBg {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(-15px, 10px) scale(1.05);
+    }
+    50% {
+        transform: translate(20px, -15px) scale(1.08);
+    }
+    75% {
+        transform: translate(10px, 5px) scale(1.03);
+    }
+}
+@keyframes glowPulse {
+    0%, 100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+body.day-mode header .logo .text h2 {
+    background: linear-gradient(135deg, #00aaff, #5d00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+body.day-mode header nav a:hover{
+color:#06B6D4;
+}
+body.day-mode .home {
+    position: relative;
+    background-image: url(../image/home2.png);
+}

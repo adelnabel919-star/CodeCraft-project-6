@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/all.min.css">
+        <title>Start Your Project</title>
+        <style>
+            :root {
+                --bg: #07111f;
+                --card: rgba(255,255,255,0.08);
+                --text: #f8fafc;
+                --muted: #cbd5e1;
+                --accent: #7c3aed;
+                --accent-2: #22d3ee;
+                --border: rgba(255,255,255,0.15);
+            }
+            * { box-sizing: border-box; }
+            body {
+                margin: 0;
+                font-family: 'Poppins', Arial, sans-serif;
+                background: linear-gradient(135deg, var(--bg), #111827);
+                color: var(--text);
+                min-height: 100vh;
+                padding: 24px;
+            }
+            .page {
+                max-width: 1100px;
+                margin: 0 auto;
+                background: rgba(255,255,255,0.06);
+                border: 1px solid var(--border);
+                border-radius: 28px;
+                box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+                overflow: hidden;
+                backdrop-filter: blur(16px);
+            }
+            .hero {
+                padding: 32px 32px 20px;
+                background: linear-gradient(90deg, rgba(124,58,237,0.25), rgba(34,211,238,0.15));
+                border-bottom: 1px solid var(--border);
+            }
+            .topbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+            }
+            .hero h1 {
+                margin: 0 0 10px;
+                font-size: clamp(24px, 4vw, 36px);
+            }
+            .hero p {
+                margin: 0;
+                color: var(--muted);
+                line-height: 1.7;
+                max-width: 760px;
+            }
+            .content {
+                display: grid;
+                grid-template-columns: 1.2fr 0.8fr;
+                gap: 24px;
+                padding: 24px 32px 32px;
+            }
+            .card {
+                background: var(--card);
+                border: 1px solid var(--border);
+                border-radius: 22px;
+                padding: 22px;
+            }
+            form { display: grid; gap: 16px; }
+            .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+            label {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                font-size: 14px;
+                color: var(--muted);
+            }
+            input, select, textarea, button {
+                font: inherit;
+                border-radius: 14px;
+                border: 1px solid var(--border);
+                padding: 12px 14px;
+                outline: none;
+                background: rgba(255,255,255,0.08);
+                color: var(--text);
+            }
+            input, select, textarea {
+                color: #00a993
+            }
+            textarea { min-height: 110px; resize: vertical; }
+            button {
+                cursor: pointer;
+                background: linear-gradient(90deg, var(--accent), var(--accent-2));
+                border: none;
+                font-weight: 600;
+                transition: transform 0.2s ease;
+            }
+            button:hover { transform: translateY(-2px); }
+            .hidden { display: none; }
+            .summary {
+                display: grid;
+                gap: 12px;
+            }
+            .summary-item {
+                padding: 12px 14px;
+                background: rgba(255,255,255,0.06);
+                border-radius: 14px;
+                color: var(--muted);
+            }
+            .summary-item strong { color: var(--text); }
+            .theme-switcher {
+                display: flex;
+                gap: 8px;
+            }
+            .theme-btn {
+                width: 42px;
+                height: 42px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid var(--border);
+                background: rgba(255,255,255,0.08);
+                color: var(--text);
+                cursor: pointer;
+            }
+            .theme-btn:hover {
+                transform: translateY(-2px);
+            }
+            body.day-mode {
+                background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f4f8 100%);
+                color: #0f172a;
+            }
+            body.day-mode .page,
+            body.day-mode .card {
+                background: rgba(255,255,255,0.9);
+                color: #0f172a;
+                border-color: rgba(6, 182, 212, 0.2);
+                box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
+            }
+            body.day-mode .hero {
+                background: linear-gradient(90deg, rgba(6, 182, 212, 0.14), rgba(124, 58, 237, 0.12));
+            }
+            body.day-mode input,
+            body.day-mode select,
+            body.day-mode textarea,
+            body.day-mode .theme-btn {
+                background: rgba(255,255,255,0.95);
+                color: #0f172a;
+                border-color: rgba(6, 182, 212, 0.2);
+            }
+            body.day-mode .summary-item {
+                background: rgba(240,249,255,0.9);
+                color: #334155;
+            }
+            body.day-mode .summary-item strong {
+                color: #0f172a;
+            }
+            @media (max-width: 860px) {
+                .content { grid-template-columns: 1fr; }
+                .row { grid-template-columns: 1fr; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div class="hero">
+                <div class="topbar">
+                    <h1>Start Your Project</h1>
+                    <div class="theme-switcher">
+                        <button class="theme-btn moon-btn" data-theme="night" aria-label="Switch to dark mode"><i class="fas fa-moon"></i></button>
+                        <button class="theme-btn sun-btn" data-theme="day" aria-label="Switch to light mode"><i class="fas fa-sun"></i></button>
+                    </div>
+                </div>
+                <p>اختر نوع المشروع اللي عايزه، وصِف كل التفاصيل، وسنساعدك في تحويل فكرتك إلى تصميم أو موقع احترافي يناسب احتياجك.</p>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <form id="projectForm">
+                        <div class="row">
+                            <label>
+                                الاسم
+                                <input type="text" name="name" placeholder="أدخل اسمك" required>
+                            </label>
+                            <label>
+                                البريد الإلكتروني
+                                <input type="email" name="email" placeholder="example@email.com" required>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label>
+                                نوع المشروع
+                                <select name="projectType" id="projectType" required>
+                                    <option value="website">موقع إلكتروني</option>
+                                    <option value="design">تصميم</option>
+                                </select>
+                            </label>
+                            <label>
+                                نوع التصميم المطلوب
+                                <select name="designStyle" required>
+                                    <option value="modern">مودرن</option>
+                                    <option value="minimal">سوشيال</option>
+                                    <option value="corporate">شركي</option>
+                                    <option value="luxury">فخم</option>
+                                    <option value="creative">إبداعي</option>
+                                </select>
+                            </label>
+                        </div>
+                        <label>
+                            وصف المشروع
+                            <textarea name="projectDetails" placeholder="اكتب كل حاجة محتاجها في المشروع..." required></textarea>
+                        </label>
+                        <div id="websiteFields">
+                            <label>
+                                اللغات أو التقنيات المطلوبة للموقع
+                                <select name="websiteLanguage">
+                                    <option value="html-css-js">HTML / CSS / JavaScript</option>
+                                    <option value="react">React</option>
+                                    <option value="wordpress">WordPress</option>
+                                    <option value="php">PHP</option>
+                                    <option value="laravel">Laravel</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div id="designFields" class="hidden">
+                            <label>
+                                الأدوات المطلوبة للتصميم
+                                <select name="designTool">
+                                    <option value="photoshop">Photoshop</option>
+                                    <option value="figma">Figma</option>
+                                    <option value="illustrator">Illustrator</option>
+                                    <option value="ai">ذكاء اصطناعي</option>
+                                </select>
+                            </label>
+                        </div>
+                        <label>
+                            ملاحظات إضافية
+                            <textarea name="notes" placeholder="مثال: أريد صفحة هبوط، أو تصميم احترافي، أو نسخة باللون الأسود والأبيض..."></textarea>
+                        </label>
+                        <button type="submit">إرسال الطلب</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <h3>ملخص الطلب</h3>
+                    <div class="summary" id="summaryBox">
+                        <div class="summary-item"><strong>الاسم:</strong> <span id="summaryName">-</span></div>
+                        <div class="summary-item"><strong>نوع المشروع:</strong> <span id="summaryType">-</span></div>
+                        <div class="summary-item"><strong>الأسلوب:</strong> <span id="summaryStyle">-</span></div>
+                        <div class="summary-item"><strong>الاحتياج:</strong> <span id="summaryDetails">-</span></div>
+                        <div class="summary-item"><strong>الاختيار:</strong> <span id="summaryChoice">-</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const projectType = document.getElementById('projectType');
+            const websiteFields = document.getElementById('websiteFields');
+            const designFields = document.getElementById('designFields');
+            function enableNightMode() {
+                document.body.classList.add('night-mode');
+                document.body.classList.remove('day-mode');
+            }
+            function enableDayMode() {
+                document.body.classList.add('day-mode');
+                document.body.classList.remove('night-mode');
+            }
+            document.querySelectorAll('.theme-btn').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const theme = btn.getAttribute('data-theme');
+                    if (theme === 'day') enableDayMode();
+                    else enableNightMode();
+                    localStorage.setItem('theme', theme);
+                });
+            });
+            if (localStorage.getItem('theme') === 'day') enableDayMode();
+            else enableNightMode();
+            function toggleFields() {
+                if (projectType.value === 'design') {
+                    websiteFields.classList.add('hidden');
+                    designFields.classList.remove('hidden');
+                } else {
+                    websiteFields.classList.remove('hidden');
+                    designFields.classList.add('hidden');
+                }
+            }
+            projectType.addEventListener('change', toggleFields);
+            toggleFields();
+            const form = document.getElementById('projectForm');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const name = data.get('name') || '-';
+                const type = data.get('projectType') === 'design' ? 'تصميم' : 'موقع إلكتروني';
+                const style = data.get('designStyle') || '-';
+                const details = data.get('projectDetails') || '-';
+                const choice = data.get('projectType') === 'design'
+                    ? `أداة التصميم: ${data.get('designTool')}`
+                    : `اللغة/التقنية: ${data.get('websiteLanguage')}`;
+                document.getElementById('summaryName').textContent = name;
+                document.getElementById('summaryType').textContent = type;
+                document.getElementById('summaryStyle').textContent = style;
+                document.getElementById('summaryDetails').textContent = details;
+                document.getElementById('summaryChoice').textContent = choice;
+                alert('تم إرسال الطلب بنجاح!');
+            });
+        </script>
+    </body>
+</html>

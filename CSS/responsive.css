@@ -1,0 +1,383 @@
+/* Responsive Design for CodeCraft Agency */
+/* Large screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+/* Medium screens */
+@media (max-width: 1024px) {
+    header nav ul {
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 8px;
+    }
+    header .button button {
+        margin-left: -20px;
+    }
+    header nav ul li a {
+        font-size: 16px;
+    }
+    .home .text {
+        padding: 24px 28px 28px 80px;
+        right: 0;
+    }
+    .home .text h2 {
+        font-size: 42px;
+    }
+    .home .text h3 {
+        font-size: 28px;
+    }
+    .home .text p {
+        font-size: 16px;
+    }
+    .services .container,
+    .portfolio .container,
+    .contact .contact-wrapper,
+    .footer .footer-wrapper {
+        gap: 24px;
+    }
+    .about-content {
+        gap: 24px;
+    }
+}
+/* Tablets */
+@media (max-width: 900px) {
+    header nav ul {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin: 10px 30px 14px;
+        /* flex-wrap: wrap; */
+        align-items: center;
+    }
+    .home {
+        height: auto;
+        min-height: 100vh;
+        padding: 140px 0 80px;
+    }
+    .home .container {
+        align-items: flex-start;
+    }
+    .home .text {
+        padding: 24px 24px 28px 24px;
+        text-align: center;
+    }
+    .home .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .avaters {
+        padding: 20px 0 0;
+    }
+    /* .about-content,
+    .portfolio .container {
+        flex-direction: column;
+    } */
+    .about-img,
+    .about-text,
+    .right-serv,
+    .right-prof {
+        max-width: 100%;
+        width: 100%;
+    }
+    .services .container .right-serv {
+        height: 370px;
+    }
+    .portfolio .container .right-prof {
+        height: 260px;
+    }
+    .services .left-serv,
+    .portfolio .left-prof {
+        width: 100%;
+    }
+    /* .contact .contact-wrapper,
+    .footer .footer-wrapper {
+        grid-template-columns: 1fr;
+    } */
+}
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+    header {
+        padding-top: 6px;
+    }
+    header .logo img {
+        width: 72px;
+    }
+    header .logo .text h2 {
+        font-size: 20px;
+    }
+    header .button,
+    header .navBar,
+    header .nightandday {
+        display: none;
+    }
+    header .container {
+        justify-content: space-between;
+        gap: 10px;
+    }
+    header .mobile-nav-icons {
+        display: none;
+    }
+        header .mobile-nav-panel.open {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(123px) translateY(-12px);
+    }
+    header .mobile-nav-toggle {
+        display: inline-flex;
+    }
+    header .mobile-theme-switch {
+        display: flex;
+    }
+    header .mobile-nav-panel {
+        display: block;
+    }
+    header .logo {
+        flex: 1;
+    }
+    .home .text h2 {
+        font-size: 34px;
+    }
+    .home .text h3 {
+        font-size: 24px;
+    }
+    .home .text p {
+        font-size: 15px;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+        header .mobile-nav-icons, header .mobile-nav-toggle {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-features {
+        flex-wrap: wrap;
+    }
+    .services .left-serv .service-box,
+    .portfolio .left-prof .project-box,
+    .testimonial-card,
+    .contact-info,
+    .contact-form,
+    .footer {
+        border-radius: 18px;
+    }
+    .services .container .right-serv {
+        height: 518px;
+    }
+    .portfolio .container .right-prof {
+        height: 362px;
+        margin-right: -12px;
+    }
+    .testimonials .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact .input-row {
+        grid-template-columns: 1fr;
+    }
+    .contact .contact-form button {
+        width: 100%;
+    }
+    .footer .footer-wrapper {
+        gap: 20px;
+    }
+}
+/* Phones */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    header .container {
+        padding: 10px 14px;
+    }
+    header .logo {
+        gap: 8px;
+    }
+    header .logo img {
+        width: 56px;
+    }
+    header .logo .text h2 {
+        font-size: 18px;
+    }
+    header .logo .text p {
+        font-size: 13px;
+    }
+    .home {
+        padding: 120px 0 60px;
+    }
+    .home .text {
+        padding: 18px 16px 22px;
+    }
+    .home .text h2 {
+        font-size: 28px;
+    }
+    .home .text h3 {
+        font-size: 20px;
+    }
+    .home .text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .home .container .text p {
+        text-align: justify;
+    }
+    .home .buttons {
+        gap: 12px;
+    }
+    .home .buttons button {
+        width: 100%;
+        justify-content: center;
+    }
+    .home .avaters .img-container {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        flex-wrap: wrap;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .stat-number {
+        font-size: 36px;
+    }
+    .services .container .right-serv {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+    .services .container .left-serv {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+    .portfolio .container .right-prof {
+        border-radius: 20px;
+        padding: 30px 20px;
+        flex: 1 1 100%;
+        min-width: 0;
+        margin-right: 0;
+    }
+
+    .about-text,
+    .contact-info,
+    .contact-form,
+    .footer-brand,
+    .footer-links,
+    .footer-social {
+        padding-left: 12px;
+        padding-right: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .service-box,
+    .testimonial-card,
+    .contact-item {
+        padding: 16px;
+    }
+    .contact .contact-form input,
+    .contact .contact-form textarea {
+        padding: 12px 14px;
+    }
+    .footer-social .social-icons {
+        gap: 10px;
+    }
+    .about-content,
+    .services .container,
+    .portfolio .container,
+    .contact .contact-wrapper,
+    .footer .footer-wrapper {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: stretch;
+    }
+    .about-content {
+        gap: 24px;
+    }
+    .services .container {
+        align-items: stretch;
+    }
+    .services .container .right-serv,
+    .services .container .left-serv,
+    .portfolio .container .right-prof,
+    .portfolio .container .left-prof,
+    .about-text,
+    .contact .contact-info,
+    .contact .contact-form,
+    .footer-brand,
+    .footer-links,
+    .footer-social {
+        width: 100%;
+        min-width: 0;
+        flex: 1 1 100%;
+    }
+    .services .container .right-serv,
+    .portfolio .container .right-prof {
+        height: auto;
+    }
+    .portfolio .container .left-prof {
+        justify-content: flex-start;
+    }
+    .home .buttons {
+        flex-direction: column;
+    }
+    .home .buttons button {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    header .mobile-nav-icons {
+        display: none;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 420px) {
+    header .logo .text h2 {
+        font-size: 16px;
+    }
+    .home .text h2 {
+        font-size: 24px;
+    }
+    .home .text h3 {
+        font-size: 18px;
+    }
+    .home .buttons button {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+    .about-text h2 {
+        font-size: 28px;
+    }
+    .footer-brand .footer-logo img {
+        width: 56px;
+    }
+}
+
+/* Dark and light mode consistency */
+body.day-mode .home .text,
+body.night-mode .home .text {
+    backdrop-filter: blur(16px);
+}
+
+body.day-mode .stat-box,
+body.day-mode .service-box,
+body.day-mode .project-box,
+body.day-mode .testimonial-card,
+body.day-mode .contact-info,
+body.day-mode .contact-form,
+body.day-mode .footer,
+body.night-mode .stat-box,
+body.night-mode .service-box,
+body.night-mode .project-box,
+body.night-mode .testimonial-card,
+body.night-mode .contact-info,
+body.night-mode .contact-form,
+body.night-mode .footer {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
