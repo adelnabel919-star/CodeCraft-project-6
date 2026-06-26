@@ -188,6 +188,9 @@
 }
 /* Phones */
 @media (max-width: 576px) {
+    body, html {
+        overflow-x: hidden;
+    }
     .container {
         padding-left: 12px;
         padding-right: 12px;
