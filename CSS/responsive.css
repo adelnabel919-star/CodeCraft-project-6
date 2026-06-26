@@ -240,7 +240,6 @@
         display: flex;
         align-items: center;
         gap: 1px;
-        flex-wrap: wrap;
     }
     .stats-grid {
         grid-template-columns: 1fr;
